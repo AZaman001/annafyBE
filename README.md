@@ -13,3 +13,34 @@
 5. Once you've created the Heroku App and deployed, ensure at least one instance of the app running: 
 	    heroku ps:scale web=1
 6. After deploy, put oracledb back in node_modules to run locally
+
+## Sample API Calls Available:
+###	GET: /getItems
+	Gets all available items.
+###	GET: /getOrderInfos
+	Gets all entries in Order Info table
+###	GET: /searchItem
+	Allows search item by name {searchString}, category {catId}, or type {typeId}. 
+####	Example: /searchItem?searchString="iPhone"
+	Searches anything with the work iPhone in it.
+
+	Sample response: 
+	[
+		{
+			"ITEM_NAME": "iPhone Charger",
+			"ITEM_PRICE": 6.99,
+			"CATEGORY_NAME": "Work Related",
+			"TYPE_NAME": "Discounted"
+		}
+	]
+
+	Example: /searchItem?catId=1 // for all "personal" items
+	Example: /searchItem?typeId=2 // for all "discounted" items
+	Example: /searchItem?catId=2&typeId=1 //for all "work related and exclusive" items
+###	POST: /addOrder
+	Add an order, keeping this in place for "check out" part 
+	Example request body:
+	{
+		"Tax": 4.95,
+		"ItemID" : 9
+	}
