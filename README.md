@@ -34,9 +34,9 @@
 		}
 	]
 
-	Example: /searchItem?catId=1 // for all "personal" items
-	Example: /searchItem?typeId=2 // for all "discounted" items
-	Example: /searchItem?catId=2&typeId=1 //for all "work related and exclusive" items
+####	Example: /searchItem?catId=1 // for all "personal" items
+####	Example: /searchItem?typeId=2 // for all "discounted" items
+####	Example: /searchItem?catId=2&typeId=1 //for all "work related and exclusive" items
 ###	POST: /addOrder
 	Add an order, keeping this in place for "check out" part 
 	Example request body:
