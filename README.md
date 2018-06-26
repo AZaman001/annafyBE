@@ -1,5 +1,11 @@
 # annafyBE
 
+## To install oracledb
+1. Follow the directions here: https://oracle.github.io/node-oracledb/INSTALL.html#quickstart
+
+NOTE: for macOS the Oracle Instant Client libraries MUST be copied to
+'~/lib'. The instructions say "or  /usr/local/lib" but that won't work.
+
 ## To run the web service locally:
 1. npm install
 2. node server.js
