@@ -1,5 +1,7 @@
 # annafyBE
 
+NOTE: No longer have access to DB instance.
+
 ## To install oracledb
 1. Follow the directions here: https://oracle.github.io/node-oracledb/INSTALL.html#quickstart
 
